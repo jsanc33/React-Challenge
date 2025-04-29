@@ -1,21 +1,54 @@
-export default function Portfolio() {
+import React from 'react';
+
+const repos = [
+  {
+    url: 'https://github.com/jsanc33/Project-1',
+    name: 'Project 1',
+  },
+  {
+    url: 'https://github.com/AmnaEjaz488/Project-2',
+    name: 'Project 2',
+  },
+  {
+    url: 'https://github.com/jsanc33/Book-Search-Engine',
+    name: 'Book Search Engine',
+  },
+  {
+    url: 'https://github.com/jsanc33/nosql-api',
+    name: 'NoSQL API',
+  },
+  {
+    url: 'https://github.com/jsanc33/Vehicle-Builder',
+    name: 'Vehicle Builder',
+  },
+  {
+    url: 'https://github.com/jsanc33/personnel-fulfillment',
+    name: 'Personnel Fulfillment',
+  },
+];
+
+const Portfolio = () => {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+      {repos.map((repo, index) => (
+        <div
+          key={index}
+          className="bg-white shadow-md rounded-2xl p-6 border hover:shadow-lg transition"
+        >
+          <h2 className="text-xl font-bold mb-2">{repo.name}</h2>
+          <p className="text-gray-600 break-words">{repo.url}</p>
+          <a
+            href={repo.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block text-blue-600 hover:underline"
+          >
+            View Repository →
+          </a>
+        </div>
+      ))}
     </div>
   );
-}
+};
 
-// six projects with images, titles, and links to deployed applications and GitHub repositories
+export default Portfolio;
