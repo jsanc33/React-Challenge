@@ -3,3 +3,7 @@
   align-items: flex-start;
   flex-direction: column !important;
 }
+
+.details-flex {
+  flex-direction: column;
+}
