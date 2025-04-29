@@ -26,7 +26,7 @@ export default function About() {
           Texas, where I live with my son.
         </p>
       </div>
-      <div style={style.flexBoxTurnOn}>
+      <div className="details-flex" style={style.flexBoxTurnOn}>
         <p>👨‍👦 I'm a proud dad — it's the most important title I hold.</p>
         <p>
           💼 I work full-time at H-E-B, one of the busiest grocery companies

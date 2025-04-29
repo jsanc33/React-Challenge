@@ -5,5 +5,5 @@
 }
 
 .details-flex {
-  flex-direction: column;
+  flex-direction: column !important;
 }
