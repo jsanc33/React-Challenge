@@ -30,7 +30,7 @@ export default function Resume() {
   return (
     <div>
       <h1>Resume</h1>
-     <a href="https://docs.google.com/document/d/1k9vUFV7EVjn0LYbeZbUgjDeCZtz_SGaG/edit?usp=sharing&ouid=112861811330360594968&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"/>
+     <a href="https://docs.google.com/document/d/1k9vUFV7EVjn0LYbeZbUgjDeCZtz_SGaG/edit?usp=sharing&ouid=112861811330360594968&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Download My Resume</a>
       <section>
         <h2>Skills</h2>
         <ul>
